@@ -10,10 +10,10 @@ export default {
 </script>
 
 <template>
-  <header class="p-4">
+  <header class="p-5">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 bg-dark">
+        <div class="col-12">
           <div class="d-flex justify-content-between align-items-baseline">
             <div class="content">
               <a href="#">
@@ -22,18 +22,18 @@ export default {
             </div>
             <div class="content">
               <ul>
-                <li v-for="(label, index) in HeaderMenu" :key="`HM-${index}`"><a class="fw-bold" :href="label.url">{{
+                <li class="px-5" v-for="(label, index) in HeaderMenu" :key="`HM-${index}`"><a :href="label.url">{{
                   label.label }}</a></li>
               </ul>
             </div>
             <div class="content">
               <ul>
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90 fa-xl"></i></a>
                 </li>
-                <li class=""><a href="#"><i class="fa-solid fa-bag-shopping position-relative"><span class="position-absolute top-0 start-100
-                  translate-middle badge rounded-pill bg-danger">
+                <li><a href="#"><i class="fa-solid fa-bag-shopping fa-xl position-relative"><span class="position-absolute bottom-100 start-50
+                  badge rounded-pill bg-badge fs-6">
                         0</span></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bars fa-xl"></i></a></li>
 
               </ul>
             </div>
@@ -45,10 +45,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/bgColors' as*;
-@use '../styles/partials/borderColors' as*;
-@use '../styles/partials/fillColors' as*;
-@use '../styles/partials/textColors' as*;
+@use '../styles/partials/Colors' as*;
+
+img {
+  width: 200px;
+}
 
 
 ul {
@@ -57,12 +58,18 @@ ul {
   li {
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    margin: 0 20px;
   }
 
   a {
     text-transform: uppercase;
-    color: white;
+    color: $ffffff;
+    font-size: larger;
+
   }
+}
+
+.bg-badge {
+  background-color: $a40c4ff;
 }
 </style>
