@@ -48,7 +48,7 @@ export default {
 @use '../styles/partials/Colors' as*;
 
 img {
-  width: 200px;
+  width: 250px;
 }
 
 
@@ -64,8 +64,6 @@ ul {
   a {
     text-transform: uppercase;
     color: $ffffff;
-    font-size: larger;
-
   }
 }
 

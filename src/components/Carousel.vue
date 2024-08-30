@@ -1,5 +1,11 @@
 <script>
+
+import CarouselSection from './CarouselSection.vue';
+
 export default {
+    components: {
+        CarouselSection,
+    },
     data() {
         return {
             slides: [
@@ -23,8 +29,9 @@ export default {
         <div class="carousel-slide" v-for="(slide, index) in slides" :key="index"
             :class="(index === currentIndex) ? 'active' : ''">
             <img :src="slide" alt="carousel image" />
+            <CarouselSection />
         </div>
-        <div class="carousel-indicators">
+        <div class=" carousel-indicators">
             <span v-for="(slide, index) in slides" :key="index" @click="goToSlide(index)"><i
                     :class="(index === currentIndex) ? 'fa-regular fa-circle-dot fa-xl active' : 'fa-solid fa-circle fa-xl'"></i></span>
         </div>
@@ -59,7 +66,7 @@ export default {
 
 .carousel-indicators {
     position: absolute;
-    bottom: 30px;
+    //bottom: 30px;
 
     span {
         padding: 10px;
@@ -72,8 +79,7 @@ export default {
 
     .active {
         color: $ffffff;
-
-
     }
+
 }
 </style>
