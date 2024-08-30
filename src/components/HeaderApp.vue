@@ -30,7 +30,9 @@ export default {
               <ul>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
                 </li>
-                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li class=""><a href="#"><i class="fa-solid fa-bag-shopping position-relative"><span class="position-absolute top-0 start-100
+                  translate-middle badge rounded-pill bg-danger">
+                        0</span></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
 
               </ul>
@@ -48,9 +50,6 @@ export default {
 @use '../styles/partials/fillColors' as*;
 @use '../styles/partials/textColors' as*;
 
-img {
-  width: 60%;
-}
 
 ul {
   display: flex;
