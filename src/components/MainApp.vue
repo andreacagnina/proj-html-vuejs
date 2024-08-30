@@ -1,19 +1,20 @@
 <script>
-import CardSection from './CardSection.vue';
+import MCardSection from './MCardSection.vue';
+import MFirstSection from './MFirstSection.vue';
 export default {
   components: {
-    CardSection,
+    MCardSection,
+    MFirstSection
   }
 
 }
 </script>
 
 <template>
-  <div class="container my-5">
-    <div class="row">
-      <CardSection />
-    </div>
-  </div>
+
+  <MCardSection />
+  <MFirstSection />
+
 </template>
 
 <style lang="scss" scoped>

@@ -67,6 +67,7 @@ export default {
 .carousel-indicators {
     position: absolute;
 
+
     span {
         padding: 10px;
 

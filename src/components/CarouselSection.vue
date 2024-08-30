@@ -9,7 +9,7 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class="content">
-                    <h1 class="display-1 mb-4">Contemporary Ideas</h1>
+                    <h1 class="mb-4">Contemporary Ideas</h1>
                     <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
                         eligendi nulla
                         reiciendis, repudiandae fugit? Numquam deserunt maiores nihil at possimus, repudiandae quae,

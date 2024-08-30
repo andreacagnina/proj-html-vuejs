@@ -31,4 +31,12 @@ export default {
   width: 100%;
   z-index: 1
 }
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
 </style>

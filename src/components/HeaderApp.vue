@@ -20,7 +20,7 @@ export default {
                 <img src="../assets/img/logo-light.png" alt="logo">
               </a>
             </div>
-            <div class="content">
+            <div class="content d-none d-lg-flex">
               <ul>
                 <li class="px-5" v-for="(label, index) in HeaderMenu" :key="`HM-${index}`"><a :href="label.url">{{
                   label.label }}</a></li>
