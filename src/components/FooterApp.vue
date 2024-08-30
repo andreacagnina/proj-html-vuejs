@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    3
+    FOOTER
   </div>
 </template>
 

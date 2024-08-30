@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    2
+    MAIN
   </div>
 </template>
 
