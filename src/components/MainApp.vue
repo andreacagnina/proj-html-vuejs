@@ -1,12 +1,18 @@
 <script>
+import CardSection from './CardSection.vue';
 export default {
+  components: {
+    CardSection,
+  }
 
 }
 </script>
 
 <template>
-  <div>
-    MAIN
+  <div class="container my-5">
+    <div class="row">
+      <CardSection />
+    </div>
   </div>
 </template>
 

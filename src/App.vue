@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <HeaderApp class="zindex" />
+  <HeaderApp class="z-index" />
   <Carousel />
   <MainApp />
   <FooterApp />
@@ -24,7 +24,7 @@ export default {
 @use './styles/generals.scss';
 
 
-.zindex {
+.z-index {
   position: absolute;
   top: 0;
   left: 0;

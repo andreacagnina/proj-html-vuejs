@@ -6,12 +6,19 @@ export default {
 
 <template>
     <div class="container carousel-caption top-50 start-50 translate-middle lh-lg">
-        <h1 class="display-1 mb-4">Contemporary Ideas</h1>
-        <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
-            eligendi nulla
-            reiciendis, repudiandae fugit? Numquam deserunt maiores nihil at possimus, repudiandae quae, nisi ab
-            animi accusantium sunt iste ad.</p>
-        <button class=" button my-5">REGISTER NOW</button>
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h1 class="display-1 mb-4">Contemporary Ideas</h1>
+                    <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
+                        eligendi nulla
+                        reiciendis, repudiandae fugit? Numquam deserunt maiores nihil at possimus, repudiandae quae,
+                        nisi ab
+                        animi accusantium sunt iste ad.</p>
+                    <button class=" button my-5">REGISTER NOW</button>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
