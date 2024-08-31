@@ -4,6 +4,7 @@ import MFirstSection from './MFirstSection.vue';
 import MSecondSection from './MSecondSection.vue';
 import MThirdSection from './MThirdSection.vue';
 import MFourthSection from './MFourthSection.vue';
+import MFifthSection from './MFifthSection.vue';
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     MSecondSection,
     MThirdSection,
     MFourthSection,
+    MFifthSection,
   }
 
 }
@@ -24,6 +26,7 @@ export default {
   <MSecondSection />
   <MThirdSection />
   <MFourthSection />
+  <MFifthSection />
 
 </template>
 

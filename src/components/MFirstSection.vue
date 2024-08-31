@@ -40,9 +40,7 @@ h3 {
     font-weight: 600;
 }
 
-p {
-    color: $a847b7b;
-}
+
 
 h3 {
     color: $a40c4ff;
@@ -52,5 +50,9 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+p {
+    color: $a847b7b;
 }
 </style>

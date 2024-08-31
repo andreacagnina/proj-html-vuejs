@@ -62,4 +62,8 @@ img {
     height: 70%;
     object-fit: cover;
 }
+
+p {
+    color: $a847b7b;
+}
 </style>
