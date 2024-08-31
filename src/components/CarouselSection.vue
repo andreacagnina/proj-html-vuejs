@@ -8,7 +8,7 @@ export default {
     <div class="container carousel-caption top-50 start-50 translate-middle lh-lg">
         <div class="row">
             <div class="col-12">
-                <div class="content">
+                <div class="content d-none  d-lg-inline">
                     <h1 class="mb-4">Contemporary Ideas</h1>
                     <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
                         eligendi nulla

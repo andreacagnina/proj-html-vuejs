@@ -7,7 +7,7 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <div class="content">
                     <h2 class="text-capitalize">the trusted name for in-home tutoring.</h2>
                 </div>
@@ -44,5 +44,11 @@ p {
 
 h3 {
     color: $a40c4ff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>
