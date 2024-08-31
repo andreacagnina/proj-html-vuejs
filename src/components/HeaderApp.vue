@@ -18,7 +18,7 @@ export default {
             <img src="../assets/img/logo-light.png" alt="logo">
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse order-3" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item" v-for="(label, index) in HeaderMenu" :key="`HM-${index}`">
               <a class="nav-link" :href="label.url">{{
@@ -26,8 +26,8 @@ export default {
             </li>
           </ul>
         </div>
-        <div>
-          <ul class="navbar-nav flex-row">
+        <div class="order-2 order-lg-3">
+          <ul class="navbar-nav flex-row order-2">
             <li class="">
               <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass fa-rotate-90 fa-xl"></i></a>
             </li>
