@@ -18,7 +18,9 @@ export default {
                         consequatur veritatis
                         doloribus, ullam iure saepe officiis cum numquam corporis animi aspernatur sint eius tenetur
                         minima! At expedita maiores ea.</p>
-                    <h3 class="lead text-uppercase">learn more</h3>
+                    <a href="#">
+                        <h3 class="lead text-uppercase">learn more</h3>
+                    </a>
                 </div>
             </div>
             <div class="col-12">
