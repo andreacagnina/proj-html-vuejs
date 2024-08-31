@@ -3,6 +3,7 @@ import MCardSection from './MCardSection.vue';
 import MFirstSection from './MFirstSection.vue';
 import MSecondSection from './MSecondSection.vue';
 import MThirdSection from './MThirdSection.vue';
+import MFourthSection from './MFourthSection.vue';
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     MFirstSection,
     MSecondSection,
     MThirdSection,
+    MFourthSection,
   }
 
 }
@@ -21,6 +23,7 @@ export default {
   <MFirstSection />
   <MSecondSection />
   <MThirdSection />
+  <MFourthSection />
 
 </template>
 

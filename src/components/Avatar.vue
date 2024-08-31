@@ -23,7 +23,7 @@ export default {
     <div class="test-slider" :class="(index === currentIndex) ? 'active' : ''"
         v-for="(testimonial, index) in Testimonials" :key="index">
         <img :src="testimonial.url" alt="Avatar" class="avatar mb-3">
-        <p class="my-5 lh-lg fs-4">{{ testimonial.cit }}</p>
+        <p class="my-5 lh-lg">{{ testimonial.cit }}</p>
         <h3>{{ testimonial.name }}</h3>
         <h5 class="text-uppercase my-3">{{ testimonial.role }}</h5>
     </div>

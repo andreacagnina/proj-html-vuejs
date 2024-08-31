@@ -10,7 +10,7 @@ export default {
             <div class="col-12">
                 <div class="content d-none  d-lg-inline">
                     <h1 class="mb-4">Contemporary Ideas</h1>
-                    <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
                         eligendi nulla
                         reiciendis, repudiandae fugit? Numquam deserunt maiores nihil at possimus, repudiandae quae,
                         nisi ab

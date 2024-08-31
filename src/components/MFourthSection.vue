@@ -1,18 +1,26 @@
 <script>
 export default {
-
+    data() {
+        return {
+            infos: [
+                'What We Do',
+                'Degree Programme',
+                'Career Achievements',
+                'Personal Managment',
+                'Steps To Success',
+                'Knowledge Transfer',
+            ],
+            currentIndex: 0,
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="card" style="width: 18rem;">
-        <div class="card-header">
-            Featured
-        </div>
+    <div class="card">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item" v-for="(label, index) in infos" :key="index">{{ label }}</li>
+
         </ul>
     </div>
 </template>

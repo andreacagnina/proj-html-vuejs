@@ -13,7 +13,7 @@ export default {
 <template>
     <div class="container my-5">
         <div class="row">
-            <div class="col-6 col-md-4 g-md-2 col-lg-2" v-for="(card, index) in matterCards" :key="`card-${index}`">
+            <div class="col-6 col-md-4 g-2 col-lg-2" v-for="(card, index) in matterCards" :key="`card-${index}`">
                 <a href="#">
                     <div class="content matter-card p-5 p-md-2">
                         <img :src="card.url" alt="img matter">
