@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid bg-img py-5">
+    <div class="container-fluid bg-img py-5 border">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -96,7 +96,6 @@ export default {
             </div>
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
@@ -104,7 +103,6 @@ export default {
 
 .bg-img {
     background-image: url(../assets/img/page-background-img.png);
-    height: 100vh;
 }
 
 h2,
