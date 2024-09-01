@@ -9,7 +9,7 @@ export default {
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
                 <div class="content text-center">
-                    <img src="../assets/img/h1-img-8.jpg" alt="World img">
+                    <img src="../../assets/img/h1-img-8.jpg" alt="World img">
                     <!-- MANCA IMG NUVOLA -->
                 </div>
             </div>
@@ -41,7 +41,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 h2,
 h3 {

@@ -14,7 +14,7 @@ export default {
         <div class="container">
             <div class="navbar-brand">
                 <a href="#">
-                    <img src="../assets/img/logo-light.png" alt="logo">
+                    <img src="../../assets/img/logo-light.png" alt="logo">
                 </a>
             </div>
             <div class="collapse navbar-collapse order-3" id="navbarNav">
@@ -48,7 +48,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 img {
     width: 250px;

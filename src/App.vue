@@ -1,7 +1,7 @@
 <script>
-import HeaderApp from './components/HeaderApp.vue'
-import Carousel from './components/Carousel.vue';
-import MainApp from './components/MainApp.vue'
+import HeaderApp from './components/Header/HeaderApp.vue'
+import Carousel from './components/Header/Carousel.vue';
+import MainApp from './components//Main/MainApp.vue'
 import FooterApp from './components/FooterApp.vue'
 export default {
   components: {

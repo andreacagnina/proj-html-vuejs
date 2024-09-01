@@ -1,5 +1,5 @@
 <script>
-import { matterCards } from "../data/CardsSection";
+import { matterCards } from "../../data/CardsSection";
 export default {
     data() {
         return {
@@ -26,7 +26,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 a {
     color: $a000000;

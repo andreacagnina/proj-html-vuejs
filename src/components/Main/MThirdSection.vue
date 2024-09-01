@@ -1,6 +1,6 @@
 <script>
 
-import { Testimonials } from '../data/Testimonials';
+import { Testimonials } from '../../data/Testimonials';
 
 
 export default {
@@ -42,10 +42,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 .container-fluid {
-    background-image: url(../assets/img/interactive-map-slider-img-1.png);
+    background-image: url(../../assets/img/interactive-map-slider-img-1.png);
     background-repeat: no-repeat;
     background-position: 30% 400px;
     background-color: $a40c4ff;

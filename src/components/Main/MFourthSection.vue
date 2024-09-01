@@ -61,7 +61,7 @@ export default {
                         </div>
                         <div class="col-4 align-self-end">
                             <div class="content ">
-                                <img src="../assets/img/h12-tabs-icon-1.png" alt="geom img">
+                                <img src="../../assets/img/h12-tabs-icon-1.png" alt="geom img">
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 h2,
 h3 {

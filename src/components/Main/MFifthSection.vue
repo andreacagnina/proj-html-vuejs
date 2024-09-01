@@ -61,7 +61,7 @@ export default {
                         <div class="card">
                             <img :src="card.url" class="card-img-top" alt="card img">
                             <div class="card-body pb-0 d-flex justify-content-between align-items-center">
-                                <h4 class="card-title">{{ card.title }}</h4>
+                                <h4 class="card-title">{{ card.teacher }}</h4>
                                 <span class="badge rounded-pill text-white"
                                     :class="(card.price === 'FREE') ? 'free' : 'payment'">{{ card.price
                                     }}</span>
@@ -99,10 +99,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 .bg-img {
-    background-image: url(../assets/img/page-background-img.png);
+    background-image: url(../../assets/img/page-background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30px;
 }
 
 h2,

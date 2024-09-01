@@ -25,7 +25,7 @@ export default {
             </div>
             <div class="col-12">
                 <div class="content">
-                    <img src="../assets/img/h5-img-1.jpg" alt="img">
+                    <img src="../../assets/img/h5-img-1.jpg" alt="img">
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/Colors' as*;
+@use '../../styles/partials/Colors' as*;
 
 h2,
 h3 {
