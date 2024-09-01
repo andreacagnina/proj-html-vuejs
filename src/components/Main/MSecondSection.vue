@@ -14,7 +14,7 @@ export default {
                 </div>
             </div>
             <div class="col col-lg-4">
-                <div class="content">
+                <div class="content mt-3">
                     <h2 class="text-capitalize">empowering children to reach their potential.</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem perspiciatis ea quas

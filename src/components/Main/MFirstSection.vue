@@ -7,7 +7,7 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-lg-5">
                 <div class="content">
                     <h2 class="text-capitalize">the trusted name for in-home tutoring.</h2>
                 </div>
