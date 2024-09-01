@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-    <div class="carousel-container">
+    <div class="carousel-container position-relative">
         <div class="carousel-slide" v-for="(slide, index) in slides" :key="index"
             :class="(index === currentIndex) ? 'active' : ''">
             <img :src="slide" alt="carousel image" />
@@ -44,7 +44,6 @@ export default {
 
 
 .carousel-container {
-    position: relative;
     width: 100%;
 }
 

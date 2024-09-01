@@ -38,6 +38,10 @@ a {
     text-align: center;
     cursor: pointer;
 
+    &:hover {
+        border: 1px solid $a40c4ff;
+    }
+
     h4 {
         font-weight: 600;
         margin-top: 2rem;

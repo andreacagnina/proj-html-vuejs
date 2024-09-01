@@ -5,7 +5,8 @@ export default {
 </script>
 
 <template>
-    <div class="container carousel-caption top-50 start-50 translate-middle lh-lg">
+    <div
+        class="container carousel-caption position-absolute top-50 start-50 translate-middle lh-lg d-flex align-items-center">
         <div class="row">
             <div class="col-12">
                 <div class="content d-none  d-lg-inline">
@@ -35,5 +36,13 @@ h1 {
     color: $ffffff;
     padding: 20px 60px;
     font-weight: 600;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 </style>
