@@ -67,8 +67,9 @@ ul {
         color: $ffffff;
 
         &:hover {
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
+            color: $a40c4ff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+            transition-duration: 0.4s;
         }
     }
 }

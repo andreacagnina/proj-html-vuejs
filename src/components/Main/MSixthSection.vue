@@ -218,6 +218,9 @@ tr {
     &:hover {
         background-color: $a40c4ff;
         color: $ffffff;
+        text-shadow: 2px 2px 4px #000000;
+        transition-duration: 0.4s;
+
     }
 }
 

@@ -65,6 +65,7 @@ a {
 
     &:hover {
         border: 1px solid $a40c4ff;
+        transition-duration: 0.4s;
     }
 
     h4 {

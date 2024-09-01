@@ -92,6 +92,8 @@ ul.list-group {
         color: $a55acee;
         background-color: $fcfcfc;
         cursor: pointer;
+        transition-duration: 0.4s;
+
     }
 
     .selected {

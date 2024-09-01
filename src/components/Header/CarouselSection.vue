@@ -40,6 +40,7 @@ h1 {
     &:hover {
         background-color: $a9ce0ff;
         text-shadow: 2px 2px 4px #000000;
+        transition-duration: 0.4s;
     }
 }
 </style>

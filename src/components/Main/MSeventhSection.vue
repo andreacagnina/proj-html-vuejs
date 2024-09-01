@@ -2,14 +2,31 @@
 export default {
     data() {
         return {
-            brands: [
-                '/src/assets/img/h5-client-5.png',
-                '/src/assets/img/h5-client-1.png',
-                '/src/assets/img/h5-client-2.png',
-                '/src/assets/img/h5-client-1.png',
-            ],
-            brandsHover: [
-
+            brands: [{
+                picstatic:
+                    '/src/assets/img/h5-client-5.png',
+                picdinamic:
+                    '/src/assets/img/h5-client-5-h.png',
+                hover: false,
+            }, {
+                picstatic:
+                    '/src/assets/img/h5-client-1.png',
+                picdinamic:
+                    '/src/assets/img/h5-client-1-h.png',
+                hover: false,
+            }, {
+                picstatic:
+                    '/src/assets/img/h5-client-2.png',
+                picdinamic:
+                    '/src/assets/img/h5-client-2-h.png',
+                hover: false,
+            }, {
+                picstatic:
+                    '/src/assets/img/h5-client-1.png',
+                picdinamic:
+                    '/src/assets/img/h5-client-1-h.png',
+                hover: false,
+            }
             ],
         }
     },
@@ -19,10 +36,10 @@ export default {
 <template>
     <div class="container py-5">
         <div class="row">
-            <div class="col-3" v-for="(brand, index) in brands">
+            <div class="col-3" v-for="(brand, index) in brands" key="index">
                 <div class="content py-5">
-                    <img :src="brand" alt="">
-                    <img src="" alt="">
+                    <img :src="(brand.hover == false) ? `${brand.picstatic}` : `${brand.picdinamic}`" alt="logo brand"
+                        @mouseover="brand.hover = true" @mouseleave="brand.hover = false">
                 </div>
             </div>
         </div>
@@ -32,4 +49,7 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/Colors' as*;
 
+.content {
+    cursor: pointer;
+}
 </style>
