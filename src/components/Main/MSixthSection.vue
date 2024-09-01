@@ -99,49 +99,58 @@ export default {
                                 <tr>
                                     <td scope="row">Number of Courses</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.courses }}</td>
+                                    <td v-for="a in account.package"> {{ a.courses ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Time</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.time }}</td>
+                                    <td v-for="a in account.package"> {{ a.time ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Web Designing</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.wd }}</td>
+                                    <td v-for="a in account.package"> {{ a.wd ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Human-Centered Design</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.hcd }}</td>
+                                    <td v-for="a in account.package"> {{ a.hcd ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Basic Marketing</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.marketing }}</td>
+                                    <td v-for="a in account.package"> {{ a.marketing ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Python for Everybody</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.python }}</td>
+                                    <td v-for="a in account.package"> {{ a.python ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row"> Android Developer</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.android }}</td>
+                                    <td v-for="a in account.package"> {{ a.android ? '&check;'
+                                        : '&#9747;' }}</td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Business</td>
                                     <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.english ? 'ok' : 'ko' }}</td>
+                                    <td v-for="a in account.package"> {{ a.english ? '&check;'
+                                        : '&#9747;' }}
+                                    </td>
                                     </td>
                                 </tr>
                             </tbody>
