@@ -7,50 +7,42 @@ export default {
                     url: 'src/assets/img/h5-custom-icon-7.png',
                     title: 'Standard',
                     price: '$12',
-                    package: [
-                        {
-                            courses: '2',
-                            time: '15 Days',
-                            wd: true,
-                            hcd: true,
-                            marketing: false,
-                            python: false,
-                            android: false,
-                            english: false,
-                        }
-                    ]
+                    courses: '2',
+                    time: '15 Days',
+                    wd: true,
+                    hcd: true,
+                    marketing: false,
+                    python: false,
+                    android: false,
+                    english: false,
+
                 },
                 {
                     url: 'src/assets/img/h5-custom-icon-8.png',
                     title: 'Professional',
                     price: '$59',
-                    package: [
-                        {
-                            courses: '4',
-                            time: '30 Days',
-                            wd: true,
-                            hcd: true,
-                            marketing: true,
-                            python: true,
-                            android: false,
-                            english: false,
-                        }
-                    ]
+                    courses: '4',
+                    time: '30 Days',
+                    wd: true,
+                    hcd: true,
+                    marketing: true,
+                    python: true,
+                    android: false,
+                    english: false,
+
                 },
                 {
                     url: 'src/assets/img/h5-custom-icon-9.png',
                     title: 'Advanced',
                     price: '$88',
-                    package: [{
-                        courses: '6',
-                        time: '30 Days',
-                        wd: true,
-                        hcd: true,
-                        marketing: true,
-                        python: true,
-                        android: true,
-                        english: true
-                    }]
+                    courses: '6',
+                    time: '30 Days',
+                    wd: true,
+                    hcd: true,
+                    marketing: true,
+                    python: true,
+                    android: true,
+                    english: true
                 },
             ],
             currentIndex: 0,
@@ -84,8 +76,8 @@ export default {
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">Save up to 40% by paying weekly</th>
-                                    <th scope="col" v-for="account in accounts">
+                                    <th scope="col" class="bord-top">Save up to 40% by paying weekly</th>
+                                    <th scope="col" v-for="account in accounts" class="bord-top">
                                         <div class="text-center">
                                             <img :src="account.url" alt="">
                                             <div>{{
@@ -98,60 +90,61 @@ export default {
                             <tbody>
                                 <tr>
                                     <td scope="row">Number of Courses</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.courses ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.courses) ? 'yes' : 'no'"> {{
+                                        account.courses ? '&check;'
+                                            : '&#9747;' }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Time</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.time ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.time) ? 'yes' : 'no'"> {{
+                                        account.time ? '&check;'
+                                            : '&#9747;' }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Web Designing</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.wd ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.wd) ? 'yes' : 'no'"> {{
+                                        account.wd ? '&check;'
+                                            : '&#9747;' }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Human-Centered Design</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.hcd ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.hcd) ? 'yes' : 'no'"> {{
+                                        account.hcd ? '&check;'
+                                            : '&#9747;' }}</td>
+
                                 </tr>
                                 <tr>
                                     <td scope="row">Basic Marketing</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.marketing ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.marketing) ? 'yes' : 'no'"> {{
+                                        account.marketing ? '&check;'
+                                            : '&#9747;' }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Python for Everybody</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.python ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.python) ? 'yes' : 'no'"> {{
+                                        account.python ? '&check;'
+                                            : '&#9747;' }}</td>
+
                                 </tr>
                                 <tr>
                                     <td scope="row"> Android Developer</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.android ? '&check;'
-                                        : '&#9747;' }}</td>
-                                    </td>
+                                    <td v-for="account in accounts" :class="(account.android) ? 'yes' : 'no'"> {{
+                                        account.android
+                                            ? '&check;'
+                                            : '&#9747;' }}</td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Business</td>
-                                    <td v-for="account in accounts">
-                                    <td v-for="a in account.package"> {{ a.english ? '&check;'
-                                        : '&#9747;' }}
+                                    <td v-for="account in accounts" :class="(account.english) ? 'yes' : 'no'"> {{
+                                        account.english ? '&check;'
+                                            : '&#9747;' }}
                                     </td>
-                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button>1</button></td>
+                                    <td><button>2</button></td>
+                                    <td><button>3</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -193,5 +186,22 @@ h6 {
 
 tr {
     text-align: center;
+}
+
+.yes {
+    color: $a40c4ff;
+    font-weight: 600;
+}
+
+.no {
+    color: $dc4d40;
+}
+
+.bord-top {
+    border-top: 7px solid $a9ce0ff;
+
+    &:hover {
+        border-top: 7px solid $a40c4ff;
+    }
 }
 </style>
