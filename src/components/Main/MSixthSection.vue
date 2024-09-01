@@ -15,6 +15,7 @@ export default {
                     python: false,
                     android: false,
                     english: false,
+                    borderClass: 'border-blue',
 
                 },
                 {
@@ -29,7 +30,7 @@ export default {
                     python: true,
                     android: false,
                     english: false,
-
+                    borderClass: 'border-blue',
                 },
                 {
                     url: 'src/assets/img/h5-custom-icon-9.png',
@@ -42,17 +43,27 @@ export default {
                     marketing: true,
                     python: true,
                     android: true,
-                    english: true
+                    english: true,
+                    borderClass: 'border-blue',
                 },
             ],
-            currentIndex: 0,
         }
     },
     methods: {
-        goToSlide(index) {
-            this.currentIndex = index;
-        }
-    },
+        getAccountSymbol(account, key) {
+            return account[key] ? '✔' : '✖';
+        },
+        getAccountClass(account, key) {
+            return account[key] ? 'yes' : 'no';
+        },
+        changeBorderColor(index) {
+            this.accounts.forEach((account) => {
+                account.borderClass = 'border-blue';
+            });
+            const account = this.accounts[index];
+            account.borderClass = 'border-selected';
+        },
+    }
 }
 </script>
 
@@ -73,16 +84,25 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <table class="table table-bordered">
+                        <table class="table table-borderless">
                             <thead>
                                 <tr>
-                                    <th scope="col" class="bord-top">Save up to 40% by paying weekly</th>
-                                    <th scope="col" v-for="account in accounts" class="bord-top">
+                                    <th scope="col" class="bord-top">
+                                        <h3>Save up to 40% <br>by
+                                            paying weekly</h3>
+                                    </th>
+                                    <th scope="col" v-for="(account, index) in accounts" :key="`sel-${index}`"
+                                        :class="account.borderClass" class="bg-col">
                                         <div class="text-center">
                                             <img :src="account.url" alt="">
-                                            <div>{{
-                                                account.title }}</div>
-                                            <div>{{ account.price }}</div>
+                                            <div class="my-2">
+                                                <h3>{{
+                                                    account.title }}</h3>
+                                            </div>
+                                            <div>
+                                                <h3>{{ account.price }}</h3>
+
+                                            </div>
                                         </div>
                                     </th>
                                 </tr>
@@ -90,61 +110,61 @@ export default {
                             <tbody>
                                 <tr>
                                     <td scope="row">Number of Courses</td>
-                                    <td v-for="account in accounts" :class="(account.courses) ? 'yes' : 'no'"> {{
-                                        account.courses ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts">
+                                        {{ account.courses }}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Time</td>
-                                    <td v-for="account in accounts" :class="(account.time) ? 'yes' : 'no'"> {{
-                                        account.time ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts">
+                                        {{ account.time }}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Web Designing</td>
-                                    <td v-for="account in accounts" :class="(account.wd) ? 'yes' : 'no'"> {{
-                                        account.wd ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'wd')">
+                                        {{ getAccountSymbol(account, 'wd') }}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Human-Centered Design</td>
-                                    <td v-for="account in accounts" :class="(account.hcd) ? 'yes' : 'no'"> {{
-                                        account.hcd ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'hcd')">
+                                        {{ getAccountSymbol(account, 'hcd') }}
+                                    </td>
 
                                 </tr>
                                 <tr>
                                     <td scope="row">Basic Marketing</td>
-                                    <td v-for="account in accounts" :class="(account.marketing) ? 'yes' : 'no'"> {{
-                                        account.marketing ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'marketing')">
+                                        {{ getAccountSymbol(account, 'marketing') }}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">Python for Everybody</td>
-                                    <td v-for="account in accounts" :class="(account.python) ? 'yes' : 'no'"> {{
-                                        account.python ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'python')">
+                                        {{ getAccountSymbol(account, 'python') }}
+                                    </td>
 
                                 </tr>
                                 <tr>
                                     <td scope="row"> Android Developer</td>
-                                    <td v-for="account in accounts" :class="(account.android) ? 'yes' : 'no'"> {{
-                                        account.android
-                                            ? '&check;'
-                                            : '&#9747;' }}</td>
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'android')">
+                                        {{ getAccountSymbol(account, 'android') }}
+                                    </td>
+
                                 </tr>
                                 <tr>
                                     <td scope="row">Business</td>
-                                    <td v-for="account in accounts" :class="(account.english) ? 'yes' : 'no'"> {{
-                                        account.english ? '&check;'
-                                            : '&#9747;' }}
+                                    <td v-for="account in accounts" :class="getAccountClass(account, 'english')">
+                                        {{ getAccountSymbol(account, 'english') }}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td><button>1</button></td>
-                                    <td><button>2</button></td>
-                                    <td><button>3</button></td>
+                                    <td class="invisible no-border"></td>
+                                    <td v-for="(account, index) in accounts" :key="`sel-${index}`" class="bg-col">
+                                        <button class="button my-4" @click="changeBorderColor(index)">GET IT
+                                            NOW</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -173,16 +193,6 @@ h6 {
     font-weight: 600;
 }
 
-/*p {
-    color: $a847b7b;
-}
-    */
-
-
-
-.active {
-    color: $a40c4ff;
-}
 
 tr {
     text-align: center;
@@ -194,14 +204,49 @@ tr {
 }
 
 .no {
-    color: $dc4d40;
+    color: $a847b7b;
 }
 
 .bord-top {
     border-top: 7px solid $a9ce0ff;
+    background-color: $f2f8fc;
+}
+
+.button {
+    background-color: $ffffff;
+    border: 2px solid $eaebeb;
+    color: $a847b7b;
+    padding: 20px 50px;
+    font-size: medium;
+    font-weight: 600;
 
     &:hover {
-        border-top: 7px solid $a40c4ff;
+        background-color: $a40c4ff;
+        color: $ffffff;
     }
+}
+
+.bg-col {
+    background-color: $f2f8fc;
+
+}
+
+.border-blue {
+    border-top: 7px solid $a9ce0ff;
+}
+
+.border-selected {
+    border-top: 7px solid $a40c4ff;
+}
+
+th,
+td,
+tr {
+    border: 1px solid $e5e5e5;
+}
+
+.no-border {
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 </style>

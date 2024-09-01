@@ -85,6 +85,7 @@ ul.list-group {
         font-weight: 600;
         color: $a847b7b;
         padding: 30px 40px;
+
     }
 
     li:hover {

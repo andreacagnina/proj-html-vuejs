@@ -37,12 +37,4 @@ h1 {
     padding: 20px 60px;
     font-weight: 600;
 }
-
-h1 {
-    font-size: 5rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
 </style>
