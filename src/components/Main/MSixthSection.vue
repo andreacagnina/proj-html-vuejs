@@ -101,7 +101,6 @@ export default {
                                             </div>
                                             <div>
                                                 <h3>{{ account.price }}</h3>
-
                                             </div>
                                         </div>
                                     </th>
@@ -131,7 +130,6 @@ export default {
                                     <td v-for="account in accounts" :class="getAccountClass(account, 'hcd')">
                                         {{ getAccountSymbol(account, 'hcd') }}
                                     </td>
-
                                 </tr>
                                 <tr>
                                     <td scope="row">Basic Marketing</td>
@@ -144,14 +142,12 @@ export default {
                                     <td v-for="account in accounts" :class="getAccountClass(account, 'python')">
                                         {{ getAccountSymbol(account, 'python') }}
                                     </td>
-
                                 </tr>
                                 <tr>
                                     <td scope="row"> Android Developer</td>
                                     <td v-for="account in accounts" :class="getAccountClass(account, 'android')">
                                         {{ getAccountSymbol(account, 'android') }}
                                     </td>
-
                                 </tr>
                                 <tr>
                                     <td scope="row">Business</td>
@@ -209,7 +205,6 @@ tr {
 
 .bord-top {
     border-top: 7px solid $a9ce0ff;
-    background-color: $f2f8fc;
 }
 
 .button {

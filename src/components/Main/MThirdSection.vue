@@ -1,12 +1,27 @@
 <script>
-
-import { Testimonials } from '../../data/Testimonials';
-
-
 export default {
     data() {
         return {
-            Testimonials,
+            Testimonials: [
+                {
+                    url: '/src/assets/img/instructor-img-6-150x150.jpg',
+                    cit: '"Mroin gravida nibh vel leiuctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus."',
+                    name: 'Joan Collins',
+                    role: 'Student'
+                },
+                {
+                    url: '/src/assets/img/instructor-img-8-150x150.jpg',
+                    cit: '"Mroin gravida nibh vel leiuctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus."',
+                    name: 'XXX',
+                    role: 'Scientist'
+                },
+                {
+                    url: '/src/assets/img/instructor-img-4-150x150.jpg',
+                    cit: '"Mroin gravida nibh vel leiuctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus."',
+                    name: 'XXX',
+                    role: 'Teacher'
+                },],
+
             currentIndex: 0,
         }
     },
@@ -24,8 +39,7 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class="content position-absolute top-50 start-50 translate-middle text-center">
-                    <div class="test-slider" :class="(index === currentIndex) ? 'active' : ''"
-                        v-for="(testimonial, index) in Testimonials" :key="index">
+                    <div v-show="index === currentIndex" v-for="(testimonial, index) in Testimonials" :key="index">
                         <img :src="testimonial.url" alt="Avatar" class="avatar mb-3 d-none d-md-inline-block">
                         <p class="my-5 lh-lg">{{ testimonial.cit }}</p>
                         <h3>{{ testimonial.name }}</h3>
@@ -61,15 +75,6 @@ export default {
     border-radius: 50%;
     object-fit: cover;
 }
-
-.test-slider {
-    display: none;
-}
-
-.test-slider.active {
-    display: block;
-}
-
 
 span {
     padding: 10px;

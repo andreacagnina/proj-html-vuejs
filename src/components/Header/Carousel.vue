@@ -26,8 +26,7 @@ export default {
 
 <template>
     <div class="carousel-container position-relative">
-        <div class="carousel-slide" v-for="(slide, index) in slides" :key="index"
-            :class="(index === currentIndex) ? 'active' : ''">
+        <div class="carousel-slide" v-for="(slide, index) in slides" :key="index" v-show="(index === currentIndex)">
             <img :src="slide" alt="carousel image" />
             <CarouselSection />
         </div>
@@ -50,12 +49,9 @@ export default {
 .carousel-slide {
     width: 100%;
     height: 100vh;
-    display: none;
 }
 
-.carousel-slide.active {
-    display: block;
-}
+
 
 .carousel-slide img {
     width: 100%;

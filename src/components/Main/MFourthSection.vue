@@ -42,7 +42,7 @@ export default {
                 </div>
             </div>
             <div class="col-12 col-md-8">
-                <div class="content my-md-5 py-4">
+                <div class="content my-md-5 py-4 ps-5">
                     <h2>Learning Possibilities</h2>
                     <p class="mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
                         obcaecati,

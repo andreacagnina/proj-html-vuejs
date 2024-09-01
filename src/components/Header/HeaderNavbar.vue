@@ -65,9 +65,13 @@ ul {
     a {
         text-transform: uppercase;
         color: $ffffff;
+
+        &:hover {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
     }
 }
-
 
 .bg-badge {
     background-color: $a40c4ff;

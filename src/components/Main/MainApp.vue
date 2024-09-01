@@ -5,7 +5,7 @@ import MSecondSection from './MSecondSection.vue';
 import MThirdSection from './MThirdSection.vue';
 import MFourthSection from './MFourthSection.vue';
 import MFifthSection from './MFifthSection.vue';
-import MSixthSection from './MsixthSection.vue';
+import MSixthSection from './MSixthSection.vue';
 
 export default {
   components: {

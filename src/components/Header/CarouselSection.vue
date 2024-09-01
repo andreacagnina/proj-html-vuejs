@@ -9,7 +9,7 @@ export default {
         class="container carousel-caption position-absolute top-50 start-50 translate-middle lh-lg d-flex align-items-center">
         <div class="row">
             <div class="col-12">
-                <div class="content d-none  d-lg-inline">
+                <div class="content d-none d-lg-inline">
                     <h1 class="mb-4">Contemporary Ideas</h1>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae
                         eligendi nulla
@@ -36,5 +36,10 @@ h1 {
     color: $ffffff;
     padding: 20px 60px;
     font-weight: 600;
+
+    &:hover {
+        background-color: $a9ce0ff;
+        text-shadow: 2px 2px 4px #000000;
+    }
 }
 </style>
