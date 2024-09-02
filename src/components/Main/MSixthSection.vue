@@ -86,14 +86,29 @@ export default {
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="content table-responsive">
+                        <div class="content table-responsive d-flex">
+                            <div class="w-450">
+                                <ul>
+                                    <li class="pt-5 pb-3 ">
+                                        <div class="py-4"></div>
+                                        <h3>Save up to 40% <br>by
+                                            paying weekly</h3>
+                                    </li>
+                                    <li>Number of Courses</li>
+                                    <li>Time</li>
+                                    <li>Web Designing</li>
+                                    <li>Human-Centered Design</li>
+                                    <li>Basic Marketing</li>
+                                    <li>Python for Everybody</li>
+                                    <li>Android Developer</li>
+                                    <li>Business</li>
+                                </ul>
+                            </div>
                             <table class="table table-borderless ">
+
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="bord-top w-500">
-                                            <h3>Save up to 40% <br>by
-                                                paying weekly</h3>
-                                        </th>
+
                                         <th scope="col" v-for="(account, index) in accounts" :key="`sel-${index}`"
                                             :class="account.borderClass" class="bg-col">
                                             <div class="text-center">
@@ -111,55 +126,53 @@ export default {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row" class="l-bold">Number of Courses</td>
-                                        <td v-for="account in accounts">
+                                        <td v-for="account in accounts" class="no">
                                             {{ account.courses }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Time</td>
-                                        <td v-for="account in accounts">
+                                        <td v-for="account in accounts" class="no">
                                             {{ account.time }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Web Designing</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'wd')">
                                             {{ getAccountSymbol(account, 'wd') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Human-Centered Design</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'hcd')">
                                             {{ getAccountSymbol(account, 'hcd') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Basic Marketing</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'marketing')">
                                             {{ getAccountSymbol(account, 'marketing') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Python for Everybody</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'python')">
                                             {{ getAccountSymbol(account, 'python') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold"> Android Developer</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'android')">
                                             {{ getAccountSymbol(account, 'android') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="l-bold">Business</td>
+
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'english')">
                                             {{ getAccountSymbol(account, 'english') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="invisible no-border"></td>
+
                                         <td v-for="(account, index) in accounts" :key="`sel-${index}`" class="bg-col">
                                             <button class="button my-4" @click="changeBorderColor(index)">GET IT
                                                 NOW</button>
@@ -167,6 +180,7 @@ export default {
                                     </tr>
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
                 </div>
@@ -196,10 +210,6 @@ tr {
 
 .no {
     color: $a847b7b;
-}
-
-.bord-top {
-    border-top: 7px solid $a9ce0ff;
 }
 
 .button {
@@ -238,19 +248,27 @@ tr {
     border: 1px solid $f2f2f2;
 }
 
-.no-border {
-    border-left: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
-
-.l-bold {
-    text-align: left;
+div.border li {
+    border: 1px solid $f2f2f2;
+    padding: 16px 50px;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding: 0 50px;
     color: $a847b7b;
+    background-color: $ffffff;
+
+    &:first-child {
+        color: black;
+        border-top: none;
+    }
 }
 
-.w-500 {
-    width: 500px;
+td.yes,
+td.no {
+    padding: 16px 50px
+}
+
+.w-450 {
+    width: 450px;
+    border-top: 7px solid $a9ce0ff;
 }
 </style>
