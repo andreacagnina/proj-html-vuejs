@@ -90,7 +90,7 @@ export default {
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="bord-top">
+                                        <th scope="col" class="bord-top w-350">
                                             <h3>Save up to 40% <br>by
                                                 paying weekly</h3>
                                         </th>
@@ -111,49 +111,49 @@ export default {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">Number of Courses</td>
+                                        <td scope="row" class="l-bold">Number of Courses</td>
                                         <td v-for="account in accounts">
                                             {{ account.courses }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Time</td>
+                                        <td scope="row" class="l-bold">Time</td>
                                         <td v-for="account in accounts">
                                             {{ account.time }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Web Designing</td>
+                                        <td scope="row" class="l-bold">Web Designing</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'wd')">
                                             {{ getAccountSymbol(account, 'wd') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Human-Centered Design</td>
+                                        <td scope="row" class="l-bold">Human-Centered Design</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'hcd')">
                                             {{ getAccountSymbol(account, 'hcd') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Basic Marketing</td>
+                                        <td scope="row" class="l-bold">Basic Marketing</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'marketing')">
                                             {{ getAccountSymbol(account, 'marketing') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Python for Everybody</td>
+                                        <td scope="row" class="l-bold">Python for Everybody</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'python')">
                                             {{ getAccountSymbol(account, 'python') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row"> Android Developer</td>
+                                        <td scope="row" class="l-bold"> Android Developer</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'android')">
                                             {{ getAccountSymbol(account, 'android') }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">Business</td>
+                                        <td scope="row" class="l-bold">Business</td>
                                         <td v-for="account in accounts" :class="getAccountClass(account, 'english')">
                                             {{ getAccountSymbol(account, 'english') }}
                                         </td>
@@ -250,5 +250,16 @@ tr {
 .no-border {
     border-left: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.l-bold {
+    text-align: left;
+    font-weight: 600;
+    padding: 20px 50px;
+    color: $a847b7b;
+}
+
+.w-350 {
+    width: 350px;
 }
 </style>
