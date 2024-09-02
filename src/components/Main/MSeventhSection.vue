@@ -37,7 +37,7 @@ export default {
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-3" v-for="(brand, index) in brands" key="index">
+                <div class="col-6 col-md-3" v-for="(brand, index) in brands" key="index">
                     <div class="content py-5">
                         <img :src="(brand.hover == false) ? `${brand.picstatic}` : `${brand.picdinamic}`"
                             alt="logo brand" @mouseover="brand.hover = true" @mouseleave="brand.hover = false">

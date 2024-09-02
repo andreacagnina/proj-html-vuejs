@@ -86,8 +86,8 @@ export default {
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="content">
-                            <table class="table table-borderless">
+                        <div class="content table-responsive">
+                            <table class="table table-borderless ">
                                 <thead>
                                     <tr>
                                         <th scope="col" class="bord-top w-350">
@@ -255,11 +255,11 @@ tr {
 .l-bold {
     text-align: left;
     font-weight: 600;
-    padding: 20px 50px;
+    padding: 0 50px;
     color: $a847b7b;
 }
 
 .w-350 {
-    width: 350px;
+    width: 500px;
 }
 </style>
