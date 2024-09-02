@@ -8,11 +8,11 @@ export default {
           url: '#',
         },
         {
-          label: '📞 1-677 - 124 - 44227',
+          label: '<i class="fa-solid fa-phone-volume"></i>&nbsp; 1-677 - 124 - 44227',
           url: '#'
         },
         {
-          label: '🕑 Mon - Sat 8.00 - 18.00',
+          label: '<i class="fa-regular fa-clock"></i>&nbsp; Mon - Sat 8.00 - 18.00',
           url: '#',
         }
       ],
@@ -68,8 +68,19 @@ export default {
             </h4>
             <ul>
               <li class="py-3 lh-lg" v-for="(label, index) in logo" :key="`logo-${index}`">
-                <a :href="label.url
-                  ">{{ label.label }}</a>
+                <a :href="label.url" v-html="label.label"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="content">
+            <h4 class="mb-5">
+              Popular Courses
+            </h4>
+            <ul>
+              <li class="py-3 lh-lg" v-for="(label, index) in logo" :key="`logo-${index}`">
+                <a :href="label.url" v-html="label.label"></a>
               </li>
             </ul>
           </div>
