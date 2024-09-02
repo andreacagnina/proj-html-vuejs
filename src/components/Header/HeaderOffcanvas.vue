@@ -26,6 +26,13 @@ export default {
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
+                    <label for="validationCustom02" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
                     <label for="validationCustomUsername" class="form-label">Email</label>
                     <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -100,6 +107,12 @@ export default {
         background-color: $a9ce0ff;
         text-shadow: 2px 2px 4px #000000;
         transition-duration: 0.4s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .offcanvas.offcanvas-end {
+        width: 80%;
     }
 }
 </style>
