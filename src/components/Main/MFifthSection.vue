@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="2">
         <div class="container-fluid bg-img py-5 border">
             <div class="container">
                 <div class="row">

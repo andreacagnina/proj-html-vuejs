@@ -1,11 +1,13 @@
 <script>
 
 import HeaderNavbar from './HeaderNavbar.vue';
+import HeaderOffcanvas from './HeaderOffcanvas.vue';
 import HJumbotronCarousel from './HJumbotronCarousel.vue';
 export default {
   components: {
     HeaderNavbar,
-    HJumbotronCarousel
+    HJumbotronCarousel,
+    HeaderOffcanvas,
   },
   data() {
     return {
@@ -14,26 +16,32 @@ export default {
         {
           label: 'home',
           url: '#',
+          id: '#1'
         },
         {
           label: 'courses',
           url: '#',
+          id: '#2'
         },
         {
           label: 'instructors',
           url: '#',
+          id: '#3'
         },
         {
           label: 'events',
           url: '#',
+          id: '#4'
         },
         {
           label: 'pages',
           url: '#',
+          id: '#5'
         },
         {
           label: 'elements',
           url: '#',
+          id: '#6'
         }
       ]
     };
@@ -45,6 +53,7 @@ export default {
   <header>
     <headerNavbar :navMenu="navMenu" class="z-index p-5" />
     <HJumbotronCarousel />
+    <HeaderOffcanvas />
   </header>
 </template>
 
@@ -56,6 +65,6 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2
+  z-index: 1
 }
 </style>

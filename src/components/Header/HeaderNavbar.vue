@@ -20,7 +20,7 @@ export default {
             <div class="collapse navbar-collapse order-3" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item" v-for="(label, index) in navMenu" :key="`HM-${index}`">
-                        <a class="nav-link" :href="label.url">{{
+                        <a class="nav-link" :href="label.id">{{
                             label.label }}</a>
                     </li>
                 </ul>
