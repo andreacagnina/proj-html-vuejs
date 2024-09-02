@@ -78,11 +78,6 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/Colors' as*;
 
-h2,
-h3 {
-    font-weight: 600;
-}
-
 ul.list-group {
     li {
         font-weight: 600;
@@ -95,8 +90,6 @@ ul.list-group {
         color: $a55acee;
         background-color: $fcfcfc;
         cursor: pointer;
-
-
     }
 
     .selected {

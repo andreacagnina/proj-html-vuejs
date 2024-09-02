@@ -36,8 +36,8 @@ export default {
                     </h3>
                     <ul>
                         <li class="py-3 lh-lg" v-for="(label, index) in PopularCourses" :key="`courses-${index}`">
-                            <p>{{ label.matter }}</p>
-                            <p>{{ label.teacher }}</p>
+                            <p><a href="#">{{ label.matter }}</a></p>
+                            <p><a href="#">{{ label.teacher }}</a></p>
                         </li>
                     </ul>
                 </div>
@@ -81,12 +81,6 @@ p {
         color: $ffffff;
     }
 }
-
-h4 {
-    font-weight: 600;
-}
-
-
 
 .img-resize {
     width: 200px;

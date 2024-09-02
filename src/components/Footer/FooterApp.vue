@@ -77,6 +77,5 @@ footer {
   background-color: $a222222;
   color: $ffffff;
   font-size: large;
-
 }
 </style>

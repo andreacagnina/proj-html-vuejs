@@ -48,7 +48,7 @@ export default {
                 <div class="row">
                     <div class="col-12">
                         <div class="content text-center py-5">
-                            <h1>Popular Online Courses</h1>
+                            <h2>Popular Online Courses</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit ipsa
                                 consequuntur
                                 enim
@@ -112,14 +112,6 @@ export default {
     background-position: 0% 30px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-}
-
 p {
     color: $a847b7b;
 }
@@ -138,7 +130,6 @@ span {
 }
 
 span {
-
     i {
         padding: 10px;
         cursor: pointer;

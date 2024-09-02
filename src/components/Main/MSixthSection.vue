@@ -74,7 +74,7 @@ export default {
                 <div class="row">
                     <div class="col-12">
                         <div class="content text-center py-5">
-                            <h1>Pricing Plans</h1>
+                            <h2>Pricing Plans</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit ipsa
                                 consequuntur
                                 enim
@@ -90,7 +90,7 @@ export default {
                             <table class="table table-borderless ">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="bord-top w-350">
+                                        <th scope="col" class="bord-top w-500">
                                             <h3>Save up to 40% <br>by
                                                 paying weekly</h3>
                                         </th>
@@ -185,15 +185,6 @@ export default {
     background-position: 0% 200px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-}
-
-
 tr {
     text-align: center;
 }
@@ -259,7 +250,7 @@ tr {
     color: $a847b7b;
 }
 
-.w-350 {
+.w-500 {
     width: 500px;
 }
 </style>

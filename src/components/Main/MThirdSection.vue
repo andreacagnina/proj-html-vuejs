@@ -102,12 +102,6 @@ span {
     color: $ffffff;
 }
 
-h2,
-h3,
-h5 {
-    font-weight: 600;
-}
-
 p,
 h2,
 h3,

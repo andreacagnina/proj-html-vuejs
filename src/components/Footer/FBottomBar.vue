@@ -48,4 +48,8 @@ a,
 p {
     color: $cecece;
 }
+
+a:hover {
+    color: $ffffff;
+}
 </style>

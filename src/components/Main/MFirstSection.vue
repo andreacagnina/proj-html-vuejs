@@ -37,13 +37,6 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/Colors' as*;
 
-h2,
-h3 {
-    font-weight: 600;
-}
-
-
-
 h3 {
     color: $a40c4ff;
 }

@@ -71,7 +71,6 @@ a {
     }
 
     h4 {
-        font-weight: 600;
         margin-top: 2rem;
     }
 
