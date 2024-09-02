@@ -42,60 +42,64 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid bg-img py-5 border">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="content text-center py-5">
-                        <h1>Popular Online Courses</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit ipsa consequuntur
-                            enim
-                            maiores amet cupiditate hic fugiat laudantium veritatis? Non id pariatur velit enim laborum
-                            nihil, quo illo reiciendis?</p>
+    <section>
+        <div class="container-fluid bg-img py-5 border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content text-center py-5">
+                            <h1>Popular Online Courses</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit ipsa
+                                consequuntur
+                                enim
+                                maiores amet cupiditate hic fugiat laudantium veritatis? Non id pariatur velit enim
+                                laborum
+                                nihil, quo illo reiciendis?</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4" v-for="(card, index) in cards" :key="index">
-                    <div class="content py-3 py-md-5">
-                        <div class="card">
-                            <img :src="card.url" class="card-img-top" alt="card img">
-                            <div class="card-body pb-0 d-flex justify-content-between align-items-center">
-                                <h4 class="card-title">{{ card.teacher }}</h4>
-                                <span class="badge rounded-pill text-white"
-                                    :class="(card.price === 'FREE') ? 'free' : 'payment'">{{ card.price
-                                    }}</span>
-                            </div>
-                            <div class="card-body pt-0">
-                                <h5 class="card-title">{{ card.teacher }}</h5>
-                                <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Laborum
-                                    officiis aliquam cum eos, ullam nam labore fuga iste sapiente minus nulla at,
-                                    voluptate
-                                    illum deserunt possimus corrupti non deleniti suscipit!</p>
-                                <p class="card-text"><small class="text-body-secondary"><i
-                                            class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>{{ card.numOfTeacher
-                                            }}</span>&nbsp;&nbsp;<i class="fa-solid fa-tag"></i>&nbsp;&nbsp;<span
-                                            class="fw-bold">{{
-                                                card.category }}</span></small>
-                                </p>
+                <div class="row">
+                    <div class="col-12 col-md-4" v-for="(card, index) in cards" :key="index">
+                        <div class="content py-3 py-md-5">
+                            <div class="card">
+                                <img :src="card.url" class="card-img-top" alt="card img">
+                                <div class="card-body pb-0 d-flex justify-content-between align-items-center">
+                                    <h4 class="card-title">{{ card.teacher }}</h4>
+                                    <span class="badge rounded-pill text-white"
+                                        :class="(card.price === 'FREE') ? 'free' : 'payment'">{{ card.price
+                                        }}</span>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <h5 class="card-title">{{ card.teacher }}</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Laborum
+                                        officiis aliquam cum eos, ullam nam labore fuga iste sapiente minus nulla at,
+                                        voluptate
+                                        illum deserunt possimus corrupti non deleniti suscipit!</p>
+                                    <p class="card-text"><small class="text-body-secondary"><i
+                                                class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>{{ card.numOfTeacher
+                                                }}</span>&nbsp;&nbsp;<i class="fa-solid fa-tag"></i>&nbsp;&nbsp;<span
+                                                class="fw-bold">{{
+                                                    card.category }}</span></small>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="content text-center">
-                        <div class="my-5">
-                            <span v-for="(card, index) in cards" :key="index" @click="goToSlide(index)"><i
-                                    :class="(index === currentIndex) ? 'fa-solid fa-circle active' : 'fa-solid fa-circle'"></i></span>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content text-center">
+                            <div class="my-5">
+                                <span v-for="(card, index) in cards" :key="index" @click="goToSlide(index)"><i
+                                        :class="(index === currentIndex) ? 'fa-solid fa-circle active' : 'fa-solid fa-circle'"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -122,7 +126,7 @@ p {
 
 h5,
 span {
-    color: $a6a6a6;
+    color: $a847b7b;
 }
 
 .free {

@@ -1,11 +1,11 @@
 <script>
 
 import HeaderNavbar from './HeaderNavbar.vue';
-import Carousel from './Carousel.vue';
+import HJumbotronCarousel from './HJumbotronCarousel.vue';
 export default {
   components: {
     HeaderNavbar,
-    Carousel
+    HJumbotronCarousel
   },
   data() {
     return {
@@ -44,7 +44,7 @@ export default {
 <template>
   <header>
     <headerNavbar :navMenu="navMenu" class="z-index p-5" />
-    <Carousel />
+    <HJumbotronCarousel />
   </header>
 </template>
 

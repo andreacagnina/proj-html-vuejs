@@ -35,27 +35,29 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid position-relative">
-        <div class="row">
-            <div class="col-12">
-                <div class="content">
-                    <div v-show="index === currentIndex" v-for="(testimonial, index) in Testimonials" :key="index"
-                        class="position-absolute top-50 start-50 translate-middle text-center">
-                        <div class="avatar p-3">
-                            <img :src="testimonial.url" alt="Avatar" class="mb-3">
+    <section>
+        <div class="container-fluid position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div v-show="index === currentIndex" v-for="(testimonial, index) in Testimonials" :key="index"
+                            class="position-absolute top-50 start-50 translate-middle text-center">
+                            <div class="avatar p-3">
+                                <img :src="testimonial.url" alt="Avatar" class="mb-3">
+                            </div>
+                            <p class="my-5 lh-base d-none d-lg-inline">{{ testimonial.cit }}</p>
+                            <h3 class="mt-5 mb-4">{{ testimonial.name }}</h3>
+                            <h5 class="text-uppercase">{{ testimonial.role }}</h5>
                         </div>
-                        <p class="my-5 lh-base d-none d-lg-inline">{{ testimonial.cit }}</p>
-                        <h3 class="mt-5 mb-4">{{ testimonial.name }}</h3>
-                        <h5 class="text-uppercase">{{ testimonial.role }}</h5>
-                    </div>
-                    <div class="position-absolute-ind my-5">
-                        <span v-for="(testimonial, index) in Testimonials" :key="index" @click="goToSlide(index)"><i
-                                :class="(index === currentIndex) ? 'fa-solid fa-circle active' : 'fa-solid fa-circle'"></i></span>
+                        <div class="position-absolute-ind my-5">
+                            <span v-for="(testimonial, index) in Testimonials" :key="index" @click="goToSlide(index)"><i
+                                    :class="(index === currentIndex) ? 'fa-solid fa-circle active' : 'fa-solid fa-circle'"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

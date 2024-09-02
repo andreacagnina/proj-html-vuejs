@@ -1,10 +1,10 @@
 <script>
 
-import CarouselSection from './CarouselSection.vue';
+import HJumbotronCarouselSection from './HJumbotronCarouselSection.vue';
 
 export default {
     components: {
-        CarouselSection,
+        HJumbotronCarouselSection,
     },
     data() {
         return {
@@ -28,7 +28,7 @@ export default {
     <div class="carousel-container position-relative">
         <div class="carousel-slide" v-for="(slide, index) in slides" :key="index" v-show="(index === currentIndex)">
             <img :src="slide" alt="carousel image" />
-            <CarouselSection />
+            <HJumbotronCarouselSection />
         </div>
         <div class=" carousel-indicators">
             <span v-for="(slide, index) in slides" :key="index" @click="goToSlide(index)"><i

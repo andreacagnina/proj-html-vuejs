@@ -34,16 +34,18 @@ export default {
 </script>
 
 <template>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-3" v-for="(brand, index) in brands" key="index">
-                <div class="content py-5">
-                    <img :src="(brand.hover == false) ? `${brand.picstatic}` : `${brand.picdinamic}`" alt="logo brand"
-                        @mouseover="brand.hover = true" @mouseleave="brand.hover = false">
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-3" v-for="(brand, index) in brands" key="index">
+                    <div class="content py-5">
+                        <img :src="(brand.hover == false) ? `${brand.picstatic}` : `${brand.picdinamic}`"
+                            alt="logo brand" @mouseover="brand.hover = true" @mouseleave="brand.hover = false">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
