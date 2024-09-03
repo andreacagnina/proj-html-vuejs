@@ -24,16 +24,16 @@ export default {
 </script>
 
 <template>
-
-  <MCardSection />
-  <MFirstSection />
-  <MSecondSection />
-  <MThirdSection />
-  <MFourthSection />
-  <MFifthSection />
-  <MSixthSection />
-  <MSeventhSection />
-
+  <main>
+    <MCardSection />
+    <MFirstSection />
+    <MSecondSection />
+    <MThirdSection />
+    <MFourthSection />
+    <MFifthSection />
+    <MSixthSection />
+    <MSeventhSection />
+  </main>
 </template>
 
 <style lang="scss" scoped>

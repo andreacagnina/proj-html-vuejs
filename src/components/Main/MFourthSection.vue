@@ -36,8 +36,11 @@ export default {
                         <div>
                             <ul class="list-group">
                                 <li class="list-group-item" v-for="(tab, index) in infos" :key="index"
-                                    @click="goToSlide(index)" :class="(index === currentIndex) ? 'selected' : ''">{{
+                                    @click="goToSlide(index)" :class="{ 'selected': (index === currentIndex) }">{{
                                         tab }}</li>
+                                <!-- <li class="list-group-item" v-for="(tab, index) in infos" :key="index"
+                                    @click="goToSlide(index)" :class="(index === currentIndex) ? 'selected' : ''">{{
+                                        tab }}</li> -->
                             </ul>
                         </div>
                     </div>
